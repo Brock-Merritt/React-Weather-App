@@ -8,6 +8,13 @@ function App() {
   const dateBuilder = (d) => {
     let months = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+    let day= days [d.getDay()];
+    let date = d.getDate();
+    let month = months[d.getMonth()];
+    let year = d.getFullYear();
+
+    return `${day} ${date} ${month} ${year}`
   }
   return (
     <div className="app ">
@@ -23,6 +30,14 @@ function App() {
           <div className="location">orlando, US</div>
           <div className="date">{dateBuilder(new Date())}</div>
           
+        </div>
+        <div className="weather-box">
+          <div className="temp">
+            15 f
+          </div>
+          <div className="weather">
+            Sunny
+          </div>
         </div>
       </main>
     </div>
