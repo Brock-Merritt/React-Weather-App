@@ -1,9 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 const api = {
   key:"75f3fdf49964ec379cdd41990752cdf7",
   base: "https://api.openweathermap.org/data/2.5/"
 }
 function App() {
+  const [query, setQuery] = useState('');
+  const [weather, setWeather] = useState('');
+
+  const search = evt => {
+    if (evt.key === "Enter") {
+      fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+        .then(res => res.json())
+        .then(result => setWeather(result));
+    }
+  }
 
   const dateBuilder = (d) => {
     let months = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -27,7 +37,7 @@ function App() {
             />
          </div>
         <div className="location-box">
-          <div className="location">orlando, US</div>
+          <div className="location">Orlando, US</div>
           <div className="date">{dateBuilder(new Date())}</div>
           
         </div>
