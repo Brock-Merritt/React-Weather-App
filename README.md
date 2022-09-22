@@ -24,6 +24,8 @@
 
 * [Personal Info](#Github)
 
+![image](https://user-images.githubusercontent.com/88811836/191645716-88c86f87-40a7-4032-871b-813fd96d9d40.png)
+
 
 ## Description 
 Weather App that runs on react, dynamic background changes with location input, provides temperature and other details (cloudy,rainy, humid,etc)
