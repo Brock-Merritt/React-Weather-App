@@ -24,7 +24,8 @@
 
 * [Personal Info](#Github)
 
-![image](https://user-images.githubusercontent.com/88811836/191645716-88c86f87-40a7-4032-871b-813fd96d9d40.png)
+![image](https://user-images.githubusercontent.com/88811836/191646327-288c6fca-97d0-48ae-963c-e23d0aaed15d.png)
+
 
 
 ## Description 
