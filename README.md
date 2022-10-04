@@ -1,5 +1,4 @@
-# Read Me Gen
-
+# Weather App via React
 ![Github License](https://shields.io/badge/license-undefined-blue.svg);
 
 
